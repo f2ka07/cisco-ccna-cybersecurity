@@ -1,0 +1,11 @@
+line_id,log_line,source_4.1,detection_outcome_4.2
+1,"[1:36667:1] ET POLICY TLS possible TOR SSL traffic action alert src 203.0.113.5 dst 192.168.56.101",4.1.a IDS/IPS,true positive
+2,"Built inbound connection denied src outside:203.0.113.5 dst DMZ:192.168.10.10",4.1.b Firewall,true negative
+3,"Endpoint assigned to Quarantine-Segment due to failed posture check",4.1.c NAC,true positive
+4,"TCP_MISS/200 512 GET http://example.com/install.exe user jsmith",4.1.d Proxy,true positive
+5,"Blocked W32/Trojan.gen at gateway on file invoice.exe",4.1.e Gateway AV,true positive
+6,"flow srcaddr=192.168.56.101 dstaddr=93.184.216.34 dport=443 dOctets=12840",4.1.f NetFlow,benign
+7,"ClamAV: EICAR-Signature FOUND in /tmp/eicar.com",4.1.e Host AV,true positive
+8,"SNORT gid:1 sid:2013028 rev:5 - ET SCAN SYN Portscan detected",4.1.a IDS/IPS,false positive
+9,"GET http://updates.vendor.com/patch.exe HTTP/1.1 200 OK (authorized updater)",4.1.d Proxy,benign
+10,"flow srcaddr=192.168.56.104 dstaddr=8.8.8.8 dport=53 dOctets=84",4.1.f NetFlow,true negative

@@ -1,0 +1,36 @@
+SANDBOX DETONATION REPORT (FICTITIOUS TRAINING SAMPLE)
+Module 3 Lab 3 -- invoice.zip / dropper.exe scenario
+Report ID: SBX-LAB-2026-0601-0042
+Verdict: MALICIOUS
+Sample submitted: invoice.zip -> dropper.exe
+
+--- STATIC ANALYSIS (3.7.a) ---
+SHA-256: 7f83b1657ff1fc53b92dc18148a1d65dac078d4bffc2099c96a6aedae6f2462ef
+SHA-1:   da39a3ee5e6b4b0d3255bfef95601890afd80709
+MD5:     098f6bcd4621d373cade4e832627b4f6
+File type: PE32 executable (Windows)
+
+--- NETWORK INDICATORS (3.7.b) ---
+URL: https://cdn.evil.test/stage2.bin
+URL: http://update.evil.test/beacon
+DNS query: update.evil.test -> 203.0.113.90
+TCP callback: 203.0.113.90:443 (TLS)
+
+--- BEHAVIOR / SYSTEM EVENTS (3.7.c) ---
+Processes spawned:
+  - powershell.exe -enc SQBFAFgA... (base64 encoded command)
+  - rundll32.exe C:\Users\Public\payload.dll,EntryPoint
+Files dropped:
+  - C:\Users\Public\AppData\Local\Temp\stage2.bin
+Registry persistence:
+  - HKCU\Software\Microsoft\Windows\CurrentVersion\Run\UpdateHelper
+Mutex created: Global\LabMalwareMutex01
+Screenshot: desktop capture at T+45s (simulated)
+
+--- ANALYST SUMMARY ---
+Dropper executes PowerShell stager, downloads stage2 over HTTPS, establishes
+outbound TLS to 203.0.113.90. Recommend: block hashes on EDR, sinkhole
+update.evil.test, hunt for powershell.exe -enc on endpoints.
+
+Chain of custody: Sample uploaded 2026-06-01T08:00Z by analyst trainee;
+report exported from training sandbox (no production execution).

@@ -1,0 +1,2 @@
+2026-06-01T12:00:01Z PROXY 200 512 TCP_MISS/200 412 GET http://cdn.lab.test/login.php user=jsmith category=Business src=192.168.56.105
+2026-06-01T12:00:02Z PROXY 403 0 TCP_DENIED/403 0 GET http://malware.lab.test/install.exe user=jsmith category=Malware src=192.168.56.105

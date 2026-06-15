@@ -1,0 +1,6 @@
+time_utc,phase_5.4,action,owner
+2026-06-15T09:00:00,detection/analysis,SIEM alert mass renames on FS01,SOC Tier1
+2026-06-15T09:20:00,detection/analysis,Analyst confirms encryption note pattern,SOC Tier2
+2026-06-15T10:05:00,containment,FS01 VLAN isolated,IT Ops
+2026-06-15T14:00:00,recovery,Restore FS01 from backup,IT Ops
+2026-06-15T16:00:00,post-incident,Lessons learned meeting,Management

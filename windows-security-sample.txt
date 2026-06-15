@@ -1,0 +1,59 @@
+# Sample Windows Security log export (fictitious lab data)
+# Module 3 Lab 1 -- Event ID 4624 and 4625 examples
+
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Date: 2026-06-01T09:14:22.1234567Z
+Event ID: 4625
+Task Category: Logon
+Level: Information
+Keywords: Audit Failure
+Computer: WIN-LAB01.corp.lab
+Message:
+An account failed to log on.
+Subject:
+  Security ID:  S-1-0-0
+  Account Name:  -
+Logon Type:  3
+Process Name:  C:\Windows\System32\svchost.exe
+Network Information:
+  Workstation Name:  -
+  Source Network Address:  203.0.113.77
+  Source Port:  42222
+Detailed Authentication Information:
+  Logon Process:  NtLmSsp
+  Authentication Package: NTLM
+Failure Information:
+  Failure Reason:  Unknown user name or bad password.
+  Status:  0xC000006D
+  Sub Status:  0xC000006A
+New Logon:
+  Target User Name: admin
+  Target Domain: WIN-LAB01
+
+---
+
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Date: 2026-06-01T09:22:01.5543210Z
+Event ID: 4624
+Task Category: Logon
+Level: Information
+Keywords: Audit Success
+Computer: WIN-LAB01.corp.lab
+Message:
+An account was successfully logged on.
+Subject:
+  Security ID:  S-1-5-18
+  Account Name:  WIN-LAB01$
+Logon Type:  3
+New Logon:
+  Target User Name: helpdesk.svc
+  Target Domain: CORP
+  Logon ID:  0x3E7A12
+Network Information:
+  Workstation Name:  IT-JUMP01
+  Source Network Address:  10.10.20.50
+  Source Port:  51444
+Process Information:
+  Process Name:  C:\Windows\System32\lsass.exe

@@ -1,0 +1,9 @@
+data_element,scenario,primary_class_5.9,notes
+John Smith DOB 1988-04-02,Clinic patient chart,PHI,Health context
+Employee SSN 123-45-6789,HR payroll file,PII,Individual identifier
+VPN shared secret rotation doc,Security ops wiki,PSI,Operational security detail
+Product source repo URL internal,Engineering,IP,Trade secret / code
+Customer email alice@example.com,Marketing list,PII,Identifies individual
+Firewall rule export with admin creds,Incident ticket attachment,PSI,Credentials + control detail
+Diagnosis ICD-10 code only,Clinical record,PHI,Health information
+Public job posting title,Website,None,Not protected in scenario

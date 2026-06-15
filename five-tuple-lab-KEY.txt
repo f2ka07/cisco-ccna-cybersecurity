@@ -1,0 +1,16 @@
+Module 1 Lab 3 -- five-tuple-lab.csv answer key
+
+Suspect internal host: 192.168.56.101
+
+Reason: Repeating 5-tuple (192.168.56.101 -> 93.184.216.34:443 TCP) with high byte volume
+across many intervals; pattern consistent with periodic beacon or sustained C2-style session.
+
+Supporting 5-tuple: src=192.168.56.101 dst=93.184.216.34 sport=49876 dport=443 proto=TCP
+
+Detection recommendations (sample):
+- Rule-based: alert on >8 identical external dst:443 flows from one internal host in 60 min
+- Behavioral: first-time long-duration outbound TLS to new external ASN for workstation subnet
+- Statistical: z-score spike on bytes_out for host 192.168.56.101 vs subnet baseline
+
+Visibility notes (1.8): TLS payload encrypted in PCAP; NetFlow still shows IPs/ports/bytes.
+Profile loss (1.9): without host telemetry, cannot see process name behind flow.

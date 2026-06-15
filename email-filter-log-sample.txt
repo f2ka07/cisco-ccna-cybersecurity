@@ -1,0 +1,2 @@
+2026-06-01T13:00:01Z ESA-MAIL 250 Message accepted from sender finance@partner.lab subject="Invoice Q2" recipient=user@corp.lab
+2026-06-01T13:00:02Z ESA-MAIL 550 Message blocked MID=12345 reason=Malware attachment invoice.zip sha256=7f83b1657ff1fc53b92dc18148a1d65dac078d4bffc2099c96a6aedae6f2462ef

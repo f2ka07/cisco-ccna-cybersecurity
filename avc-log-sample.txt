@@ -1,0 +1,2 @@
+2026-06-01T11:15:01Z FTD-6-338304: Application identified: app=YouTube category=Streaming-Media client=192.168.56.102 bytes=1048576 action=Allow policy=AVC-Campus
+2026-06-01T11:15:02Z FTD-6-338304: Application identified: app=SSH client=203.0.113.44 server=192.168.56.101 port=22 risk=High action=Allow policy=AVC-Lab

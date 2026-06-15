@@ -1,0 +1,6 @@
+activity,SOC,IT_Ops,Legal,Management
+Triage alert,R,A,I,I
+Isolate VLAN,I,R,C,I
+Preserve disk image,R,C,I,I
+Notify regulator,I,C,R,A
+Post-incident review,R,I,C,A

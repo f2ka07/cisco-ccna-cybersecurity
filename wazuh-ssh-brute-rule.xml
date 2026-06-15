@@ -1,0 +1,8 @@
+<group id="5712">
+  <rule id="5712" level="10">
+    <if_group>authentication_failed</if_group>
+    <same_source_ip />
+    <description>Multiple failed SSH logins (lab rule)</description>
+    <group>authentication_failed,pci_dss_10.2.4,</group>
+  </rule>
+</group>

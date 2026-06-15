@@ -1,0 +1,30 @@
+{
+  "@timestamp": "2026-06-01T14:22:01.000Z",
+  "agent": {
+    "id": "001",
+    "name": "lab-ubuntu-01"
+  },
+  "event": {
+    "action": "failure",
+    "category": ["authentication"],
+    "severity": 7,
+    "outcome": "failure"
+  },
+  "source": {
+    "ip": "203.0.113.44",
+    "port": 42222
+  },
+  "destination": {
+    "ip": "192.168.56.101",
+    "port": 22
+  },
+  "user": {
+    "name": "root"
+  },
+  "rule": {
+    "id": "5712",
+    "name": "Multiple failed SSH logins",
+    "description": "Multiple authentication failures for the same user"
+  },
+  "full_log": "Apr 12 08:15:01 labhost sshd[2341]: Failed password for invalid user admin from 203.0.113.77 port 42222 ssh2"
+}

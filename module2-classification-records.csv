@@ -1,0 +1,7 @@
+record_type,description,exam_objective
+2.4.a,"Full .pcap file on disk (all packets)",full PCAP
+2.4.b,"DENY tcp 10.1.1.5:443 -> 198.51.100.9:443 rule 12 (firewall session)",session
+2.4.c,"NetFlow: 1024 bytes UDP port 53 between 192.168.1.10 and 8.8.8.8",statistical/metadata
+2.4.d,"SIEM: Critical malware detected hash abc...",alert
+2.4.e,"Proxy: GET /login HTTP 200 412 bytes",transaction
+2.4.f,"Dashboard: top talker 15% bandwidth increase week-over-week",statistical

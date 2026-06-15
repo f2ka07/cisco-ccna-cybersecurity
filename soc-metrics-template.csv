@@ -1,0 +1,5 @@
+metric,formula,sample_value,scope_note
+TTDetect,awareness - incident_start,20 min,Alert at 09:00; activity began 08:40
+TTContain,containment - awareness,65 min,Isolation 10:05 minus alert 09:00
+TTRespond,response_start - awareness,15 min,IR bridge call 09:15
+TTControl,stable_state - incident_start,420 min,Control at 15:40
