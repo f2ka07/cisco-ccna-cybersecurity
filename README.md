@@ -2,8 +2,8 @@
 
 **Canonical source** for hands-on lab files in *CCNA Cybersecurity: Hands-On SOC Operations from Zero to Certification* (Cisco exam **200-201 CCNACBR** v1.2).
 
-The book is accessible at: [Book Title](https://skilleo.web.app/books)  
-Practice Mock Tests are accessible at: [Practice Mock Tests](https://www.udemy.com/course/cisco-ccna-cybersecurity-200-to-201-complete-exam-prep/?referralCode=3E9FAF32B7ACDB2809C7)
+## The book is accessible at: [Book Title](https://skilleo.web.app/books)  
+## Practice Mock Tests are accessible at: [Practice Mock Tests](https://www.udemy.com/course/cisco-ccna-cybersecurity-200-to-201-complete-exam-prep/?referralCode=3E9FAF32B7ACDB2809C7)
 
 The print and digital book **does not bundle** these files. This GitHub repository is the permanent home for worksheets, sample logs, JSON alerts, sandbox reports, and synthetic PCAPs. Every lab file cited in the book (by bare filename) lives at the repository root below.
 
