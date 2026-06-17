@@ -1,4 +1,4 @@
-# CCNA Cybersecurity Lab Assets
+#CCNA Cybersecurity: Hands-On SOC Operations from Zero to Certification Lab Assets
 
 **Canonical source** for hands-on lab files in *CCNA Cybersecurity: Hands-On SOC Operations from Zero to Certification* (Cisco exam **200-201 CCNACBR** v1.2).
 
